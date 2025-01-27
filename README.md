@@ -13,4 +13,13 @@ A demo project demonstrating the use of RabbitMQ for message queuing and handlin
 
 ---
 
+## Prerequisites
+
+Before running the project, ensure you have the following installed:
+
+- **RabbitMQ Server:** Install and configure RabbitMQ on your local machine or use a hosted solution.
+- **.NET SDK:** Version 6.0 or higher.
+- **Docker:** Optional, for containerizing the RabbitMQ server.
+
+
 docker run -d --hostname rmq --name rabbit-server -p 8080:15672 -p 5672:5672 rabbitmq:3-management
