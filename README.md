@@ -21,5 +21,16 @@ Before running the project, ensure you have the following installed:
 - **.NET SDK:** Version 6.0 or higher.
 - **Docker:** Optional, for containerizing the RabbitMQ server.
 
+---
+
+## Getting Started
+
+### 1. Clone the Repository
+
+```bash
+git clone https://github.com/anti-pc/RabbitMQDemo.git
+cd RabbitMQDemo
+```
+
 
 docker run -d --hostname rmq --name rabbit-server -p 8080:15672 -p 5672:5672 rabbitmq:3-management
