@@ -32,5 +32,13 @@ git clone https://github.com/anti-pc/RabbitMQDemo.git
 cd RabbitMQDemo
 ```
 
+### 2. Install Dependencies
+
+Navigate to the project directory and restore the dependencies:
+
+```bash
+dotnet restore
+```
+
 
 docker run -d --hostname rmq --name rabbit-server -p 8080:15672 -p 5672:5672 rabbitmq:3-management
