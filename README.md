@@ -40,5 +40,20 @@ Navigate to the project directory and restore the dependencies:
 dotnet restore
 ```
 
+### 3. Configure RabbitMQ
+
+1. **Default Setup:** Ensure RabbitMQ is running locally on its default port (5672).
+2. **Custom Setup:** Update the connection details in the `appsettings.json` file:
+
+```json
+{
+  "RabbitMQ": {
+    "HostName": "localhost",
+    "UserName": "guest",
+    "Password": "guest"
+  }
+}
+
+```
 
 docker run -d --hostname rmq --name rabbit-server -p 8080:15672 -p 5672:5672 rabbitmq:3-management
