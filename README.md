@@ -56,4 +56,32 @@ dotnet restore
 
 ```
 
+### 4. Run the Application
+
+To start the application, use the following command:
+
+```bash
+dotnet run
+```
+
+---
+
+## Project Structure
+
+```
+RabbitMQDemo/
+├── Publisher/
+│   ├── Program.cs
+│   ├── Publisher.cs
+├── Subscriber/
+│   ├── Program.cs
+│   ├── Subscriber.cs
+├── appsettings.json
+└── README.md
+```
+
+- **Publisher:** Sends messages to the RabbitMQ queue.
+- **Subscriber:** Listens to the queue and processes messages.
+
+
 docker run -d --hostname rmq --name rabbit-server -p 8080:15672 -p 5672:5672 rabbitmq:3-management
