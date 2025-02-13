@@ -83,5 +83,20 @@ RabbitMQDemo/
 - **Publisher:** Sends messages to the RabbitMQ queue.
 - **Subscriber:** Listens to the queue and processes messages.
 
+---
+
+## Usage
+
+1. Start the RabbitMQ server.
+2. Run the **Publisher** to send messages:
+   ```bash
+   dotnet run --project Publisher
+   ```
+3. Run the **Subscriber** to process messages:
+   ```bash
+   dotnet run --project Subscriber
+   ```
+
+---
 
 docker run -d --hostname rmq --name rabbit-server -p 8080:15672 -p 5672:5672 rabbitmq:3-management
