@@ -98,5 +98,25 @@ RabbitMQDemo/
    ```
 
 ---
+## RabbitMQ Management Dashboard
+
+Access the RabbitMQ Management Dashboard at:
+
+```
+http://localhost:15672
+```
+
+- Default credentials:
+  - Username: `guest`
+  - Password: `guest`
+
+---
+
+## Troubleshooting
+
+- **Connection Issues:** Ensure RabbitMQ is running and the connection settings in `appsettings.json` are correct.
+- **Message Delivery Failures:** Check RabbitMQ logs for errors and ensure the queue is correctly configured.
+
+---
 
 docker run -d --hostname rmq --name rabbit-server -p 8080:15672 -p 5672:5672 rabbitmq:3-management
