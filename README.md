@@ -119,4 +119,22 @@ http://localhost:15672
 
 ---
 
+## Resources
+
+- [RabbitMQ Documentation](https://www.rabbitmq.com/documentation.html)
+- [.NET RabbitMQ Client](https://github.com/rabbitmq/rabbitmq-dotnet-client)
+- [Docker RabbitMQ](https://hub.docker.com/_/rabbitmq)
+
+---
+
+## Contributing
+
+Contributions are welcome! Feel free to submit a pull request or open an issue for discussion.
+
+---
+
+## License
+
+This project is licensed under the [MIT License](LICENSE).
+
 docker run -d --hostname rmq --name rabbit-server -p 8080:15672 -p 5672:5672 rabbitmq:3-management
